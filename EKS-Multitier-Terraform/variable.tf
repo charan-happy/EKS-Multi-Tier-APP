@@ -16,12 +16,12 @@ variable "cluster_version" {
 
 variable "subnets" {
   description = "Subnets"
-  default = ["subnet-0b1e7b7b4b1b1b1b1", "subnet-0b1e7b7b4b1b1b1b2"]
+  default = ["subnet-0e422dc910ebb1aa7", "subnet-0b28c981edfc3b2b0"]
 }
 
 variable "vpc_id" {
   description = "VPC ID"
-  default = "vpc-0b1e7b7b4b1b1b1b1"
+  default = "vpc-0ebdbf4bfda1aaff5"
   
 }
 
@@ -42,13 +42,10 @@ variable "min_capacity" {
 
 variable "instance_type" {
   description = "Instance type of the worker nodes"
-  default = "t2.micro"
+  default = "t3.medium"
 }
 
-variable "key_name" {
-  description = "Key name for the worker nodes"
-  default = "charan-eks-key"
-}
+
 
 
 

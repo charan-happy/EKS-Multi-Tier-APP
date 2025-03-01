@@ -98,3 +98,6 @@ kubectl port-forward svc/go-service 8080:8080—test localhost:8080 locally.
 
 
 
+
+
+![alt text](image.png)
