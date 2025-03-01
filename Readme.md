@@ -99,5 +99,15 @@ kubectl port-forward svc/go-service 8080:8080—test localhost:8080 locally.
 
 
 
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 
 ![alt text](image.png)
+
+![alt text](image-3.png)
+
+```
+docker build -t <dockerlogin username>/go-api:latest .
+docker push
+```

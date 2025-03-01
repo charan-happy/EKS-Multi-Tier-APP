@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: go-api
-        image: charanhappy/go-api:latest
+        image: charan63/go-api:latest
         ports:
         - containerPort: 8080
 ---
@@ -23,11 +23,11 @@ kind: Service
 metadata:
   name: go-service
 spec:
-selector:
-  app: go-api
-ports:
-  protocol: TCP
-  port: 8080
-  targetPort: 8080
-type: ClusterIP
+  selector:
+    app: go-api
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: ClusterIP
 
